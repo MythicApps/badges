@@ -1,0 +1,288 @@
+EESchema Schematic File Version 2
+LIBS:74xgxx
+LIBS:74xx
+LIBS:ac-dc
+LIBS:actel
+LIBS:adc-dac
+LIBS:analog_switches
+LIBS:atmel
+LIBS:audio
+LIBS:brooktre
+LIBS:cmos_ieee
+LIBS:cmos4000
+LIBS:conn
+LIBS:contrib
+LIBS:cypress
+LIBS:dc-dc
+LIBS:device
+LIBS:digital-audio
+LIBS:display
+LIBS:dsp
+LIBS:elec-unifil
+LIBS:ftdi
+LIBS:gennum
+LIBS:graphic
+LIBS:hc11
+LIBS:intel
+LIBS:interface
+LIBS:ir
+LIBS:linear
+LIBS:logo
+LIBS:memory
+LIBS:microchip_pic10mcu
+LIBS:microchip_pic12mcu
+LIBS:microchip_pic16mcu
+LIBS:microchip_pic18mcu
+LIBS:microchip
+LIBS:microchip1
+LIBS:microcontrollers
+LIBS:motorola
+LIBS:msp430
+LIBS:nxp_armmcu
+LIBS:opto
+LIBS:philips
+LIBS:power
+LIBS:powerint
+LIBS:pspice
+LIBS:references
+LIBS:regul
+LIBS:relays
+LIBS:rfcom
+LIBS:sensors
+LIBS:siliconi
+LIBS:special
+LIBS:stm8
+LIBS:stm32
+LIBS:supertex
+LIBS:texas
+LIBS:transf
+LIBS:transistors
+LIBS:ttl_ieee
+LIBS:valves
+LIBS:video
+LIBS:xilinx
+LIBS:Solar Car Components
+LIBS:Badges-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LMR14203 U1
+U 1 1 54DAC03D
+P 5150 3950
+F 0 "U1" H 4950 4450 60  0000 C CNN
+F 1 "LMR14203" H 5500 3700 60  0000 C CNN
+F 2 "Solar_Car_lib:R-PDSO-G6" H 5200 3950 60  0001 C CNN
+F 3 "" H 5200 3950 60  0000 C CNN
+F 4 "Texas Instruments" H 5050 4550 60  0001 C CNN "Manufacturer "
+F 5 "LMR14203XMK/NOPB" H 5150 4650 60  0001 C CNN "Manufacturer Part Number"
+F 6 "DigiKey" H 5250 4750 60  0001 C CNN "Distributor"
+F 7 "296-35194-1-ND" H 5350 4850 60  0001 C CNN "Distributor Part Number"
+	1    5150 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 54DAC044
+P 5900 3650
+F 0 "C1" V 5900 3450 50  0000 L BNN
+F 1 ".15uF" V 5900 3700 50  0000 L BNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5900 3650 60  0001 C CNN
+F 3 "" H 5900 3650 60  0000 C CNN
+	1    5900 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L L L1
+U 1 1 54DAC04B
+P 6700 3650
+F 0 "L1" H 6700 3850 60  0000 C CNN
+F 1 "15uH" H 6700 3750 60  0000 C CNN
+F 2 "Solar_Car_lib:MOS6020" H 6700 3650 60  0001 C CNN
+F 3 "" H 6700 3650 60  0000 C CNN
+	1    6700 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L ZENER D1
+U 1 1 54DAC052
+P 6250 4250
+F 0 "D1" V 6200 4100 60  0000 R CNN
+F 1 "60V @.5A" V 6350 4100 60  0000 R BNN
+F 2 "Diodes_SMD:Diode_SOT23_Handsoldering" H 6300 4250 60  0001 C CNN
+F 3 "" H 6300 4250 60  0000 C CNN
+	1    6250 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L R R2
+U 1 1 54DAC059
+P 6550 4350
+F 0 "R2" H 6450 4350 50  0000 C CNN
+F 1 "3.4K" H 6700 4350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 6550 4350 60  0001 C CNN
+F 3 "" H 6550 4350 60  0000 C CNN
+	1    6550 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 54DAC060
+P 6900 4050
+F 0 "R1" V 6850 4000 50  0000 L BNN
+F 1 "1.02K" V 7050 3950 50  0000 L BNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 6900 4050 60  0001 C CNN
+F 3 "" H 6900 4050 60  0000 C CNN
+	1    6900 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 54DAC067
+P 6400 4700
+F 0 "#PWR01" H 6400 4700 30  0001 C CNN
+F 1 "GND" H 6400 4630 30  0001 C CNN
+F 2 "" H 6400 4700 60  0000 C CNN
+F 3 "" H 6400 4700 60  0000 C CNN
+	1    6400 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 54DAC06D
+P 5150 4300
+F 0 "#PWR02" H 5150 4300 30  0001 C CNN
+F 1 "GND" H 5150 4230 30  0001 C CNN
+F 2 "" H 5150 4300 60  0000 C CNN
+F 3 "" H 5150 4300 60  0000 C CNN
+	1    5150 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L PTC F1
+U 1 1 54DAC073
+P 4150 3650
+F 0 "F1" H 4450 3600 60  0000 C CNN
+F 1 "250mA" H 3800 3600 60  0000 C CNN
+F 2 "Resistors_SMD:R_2512_HandSoldering" H 4150 3650 60  0001 C CNN
+F 3 "" H 4150 3650 60  0000 C CNN
+	1    4150 3650
+	-1   0    0    1   
+$EndComp
+$Comp
+L +BATT #PWR03
+U 1 1 54DAC07A
+P 3650 3550
+F 0 "#PWR03" H 3650 3500 20  0001 C CNN
+F 1 "+BATT" H 3650 3650 30  0000 C CNN
+F 2 "" H 3650 3550 60  0000 C CNN
+F 3 "" H 3650 3550 60  0000 C CNN
+	1    3650 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR04
+U 1 1 54DAC080
+P 7350 3650
+F 0 "#PWR04" H 7350 3610 30  0001 C CNN
+F 1 "+3.3V" H 7350 3760 30  0000 C CNN
+F 2 "" H 7350 3650 60  0000 C CNN
+F 3 "" H 7350 3650 60  0000 C CNN
+	1    7350 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 3650 5700 3650
+Wire Wire Line
+	6100 3650 6250 3650
+Wire Wire Line
+	6250 3650 6400 3650
+Wire Wire Line
+	5550 3850 6250 3850
+Wire Wire Line
+	6250 3650 6250 3850
+Wire Wire Line
+	6250 3850 6250 4000
+Connection ~ 6250 3650
+Connection ~ 6250 3850
+Wire Wire Line
+	5550 4050 6550 4050
+Wire Wire Line
+	6550 4050 6650 4050
+Wire Wire Line
+	6550 4100 6550 4050
+Connection ~ 6550 4050
+Wire Wire Line
+	6250 4450 6250 4650
+Wire Wire Line
+	6250 4650 6400 4650
+Wire Wire Line
+	6400 4650 6550 4650
+Wire Wire Line
+	6550 4650 6550 4600
+Wire Wire Line
+	6400 4650 6400 4700
+Connection ~ 6400 4650
+Wire Wire Line
+	5150 4300 5150 4250
+Wire Wire Line
+	7000 3650 7250 3650
+Wire Wire Line
+	7250 3650 7350 3650
+Wire Wire Line
+	7150 4050 7250 4050
+Wire Wire Line
+	7250 3650 7250 4050
+Wire Wire Line
+	7250 4050 7250 4100
+Connection ~ 7250 3650
+Wire Wire Line
+	4800 3850 4650 3850
+Wire Wire Line
+	4650 3850 4650 3650
+Wire Wire Line
+	4550 3650 4650 3650
+Wire Wire Line
+	4650 3650 4800 3650
+Wire Wire Line
+	3650 3550 3650 3650
+Connection ~ 4650 3650
+Wire Wire Line
+	3650 3650 3750 3650
+$Comp
+L C C2
+U 1 1 54DAC09F
+P 7250 4300
+F 0 "C2" H 7300 4400 50  0000 L CNN
+F 1 "47uF" H 7300 4200 50  0000 L CNN
+F 2 "Capacitors_SMD:c_elec_6.3x5.8" H 7250 4300 60  0001 C CNN
+F 3 "" H 7250 4300 60  0000 C CNN
+	1    7250 4300
+	1    0    0    -1  
+$EndComp
+Connection ~ 7250 4050
+Wire Wire Line
+	7250 4500 7250 4700
+$Comp
+L GND #PWR05
+U 1 1 54DAC0A8
+P 7250 4700
+F 0 "#PWR05" H 7250 4700 30  0001 C CNN
+F 1 "GND" H 7250 4630 30  0001 C CNN
+F 2 "" H 7250 4700 60  0000 C CNN
+F 3 "" H 7250 4700 60  0000 C CNN
+	1    7250 4700
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
