@@ -70,7 +70,7 @@ encoding utf-8
 Sheet 1 1
 Title "MythicApps Badge"
 Date "Tuesday, June 02, 2015"
-Rev "0.1"
+Rev "0.1.0"
 Comp "MythicApps"
 Comment1 "Author: Jason Merlo"
 Comment2 ""
